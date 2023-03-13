@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Style.css">
+
+    <title>Sign in</title>
+
+</head>
+
+<body>
+    
+    <div class="container">
+
+        
+        <div class="sign">
+           
+
+            <div class="left" id="left">
+
+
+                <!-- Default slide for form -->
+
+                <div id="login" class="login active">
+
+                    <h1 class="welcome">
+
+                        <span class="typer" id="main" data-colors="#fff" data-words="if you have an account so login" data-delay="130" data-deleteDelay="130" data-loop="1"></span>
+
+                        <span class="cursor" data-owner="main"></span>
+
+                    </h1>
+
+
+                    <div class="circle">
+                        
+                        <div class="icon-block">
+                            <ion-icon name="log-in-outline"></ion-icon>
+                        </div>
+
+                        <div class="icon-block">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </div>
+
+                        <div class="icon-block">
+                            <ion-icon name="key-outline"></ion-icon>
+                        </div>
+
+                        <img class="lock-img" src="img/Login-amico.svg" width="60%" alt="info-user1">  
+
+                    </div>
+
+                    <button class="logbtn" id="logbtn">Login</button>
+
+
+                </div>
+
+
+
+                <!-- slide for Name -->
+
+                <div id="info" class="info">
+
+
+                    <h1 class="welcome">
+
+                        <span class="typer" id="main" data-words="Your name is ..." data-colors="#fff"  data-delay="130" data-deleteDelay="130" data-loop="1"></span>
+
+                        <span class="cursor" data-owner="main"></span>
+
+                    </h1>
+
+
+                    
+                    <img class="lock-img" src="img/Personal site-amico.svg" width="50%" style="border-radius: 50%;" alt="info-user1">    
+
+
+                    <input id="infoInput" class="text-info" data-owner="name-controller" type="text" name="name" id="name" placeholder="Name"  maxlength="50" disabled>
+
+
+                    <div>
+                        <input type="checkbox" name="man" id="man" value="yes">
+                        <img src="./img/boy.png" alt="">
+
+                        <input type="checkbox" name="man" id="woman" value="yes">
+                        <img src="./img/arab.png" alt="">
+                    </div>
+
+                
+                </div>
+
+
+
+                <!-- slide for email -->
+
+                <div id="email-section" class="email">
+
+                    <h1 class="welcome">
+
+                        <span class="typer" id="main" data-words="Welcome to our site" data-colors="#fff"  data-delay="130" data-deleteDelay="130" data-loop="1"></span>
+                        <span class="cursor" data-owner="main"></span>
+
+                    </h1>
+
+                    <img class="lock-img" src="img/email-1753759-0.svg" width="50%"  alt="info-user1">    
+
+
+                    <input id="emailInput" class="text-info" data-owner="name-controller" type="text" name="name" id="name" placeholder="example@gmail.com"  maxlength="50" disabled>
+
+                </div>
+
+
+
+
+
+                <div id="password-section" class="password">
+
+
+                    <h1 class="welcome">
+
+                        <span class="typer" id="main" data-words="Welcome to our site" data-colors="#fff"  data-delay="130" data-deleteDelay="130" data-loop="1"></span>
+                        <span class="cursor" data-owner="main"></span>
+
+                    </h1>
+                    
+
+                    <img class="lock-img" src="img/Mobile login-rafiki.svg" width="75%"  alt="info-user1">    
+
+
+                    <div class="checkScurityPassword">
+
+                        <div class="bigChar">
+                            <label for="">Big Charactor</label>
+                            <input id="bigChar" type="checkbox" disabled>
+                        </div>
+
+                        <div class="smallChar">
+                            <label for="">small Charactor</label>
+                            <input id="smallChar" type="checkbox" disabled>
+                        </div>
+
+                        <div class="number">
+                            <label for="">number</label>
+                            <input id="number" type="checkbox" disabled>
+                        </div>
+
+                        <div class="sambol">
+                            <label for="">Special Charactor</label>
+                            <input id="specialChar" type="checkbox">
+                        </div>
+
+                        <div class="eightChar">
+                            <label for="">eight Charactor</label>
+                            <input id="eightChar" type="checkbox" disabled>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- login form -->
+
+                <div class="form" id="loginForm"> 
+
+                    <div class="box-info">
+                                 
+                        <img class="logo"     src="img/electronics-arts.png" width="90px" height="90px" alt="icon-site">
+                        <h3  class="title">   Sign in</h3>
+                        <p   class="content"> welcome to EA</p>
+    
+                    </div>
+    
+
+                    <form action="">
+    
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="emailSign" placeholder="example@gmail.com">
+    
+    
+                        <label for="password">Password</label>
+                        <input  type="password" name="password" id="passwordSignEEE" placeholder="Enter your password">
+    
+    
+                        <input class="checkbox" type="checkbox" name="" id="">
+                        <label class="label-checkbox" for="remmind-me">Remmind me</label>
+                        
+
+                        <button class="sub" type="submit">Sign in</button>
+    
+    
+                        <p class="direct-google">
+    
+                            <a href="" target="_blank">
+                                <ion-icon name="logo-codepen"></ion-icon>
+                            </a>
+    
+                            <a href="" target="_blank">
+                                <ion-icon name="logo-google"></ion-icon>                        
+                            </a>
+    
+                            <a href="" target="_blank">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+    
+                        </p>
+    
+                    </form>
+    
+                </div>
+                
+            </div>
+
+
+<!------------------------------------------------------ right bar ------------------------------------------------------>
+
+            <div class="right">
+
+
+                <!-- slide for login -->
+
+                <div class="directToSignUp" id="directToSignUp">
+                    
+                    <h1 class="welcome">
+
+                        <span class="typer" id="main" data-colors="#fff" data-words="you haven't account,so Sign UP" data-delay="130" data-deleteDelay="130" data-loop="1"></span>
+
+                        <span class="cursor" data-owner="main"></span>
+
+                    </h1>
+                        
+                    <img class="lock-img" src="img/Personal site-amico.svg" width="50%" alt="info-user1">  
+
+                    <button class="logbtn" id="direct-sign">Sign up</button>
+                    
+                </div>
+            
+
+                <!-- Sign up form  -->
+
+                <div class="form" id="signForm"> 
+
+                    <div class="box-info">
+                                
+                        <img class="logo"     src="img/electronics-arts.png" width="50px" height="50px" alt="icon-site">
+                        <h3  class="title">   Sign up</h3>
+                        <p   class="content"> welcome to EA</p>
+
+                    </div>
+
+
+                    <form action="">
+
+                        <label for="name">Name</label>
+                        <input onclick="manageLeftBAr(this.name)"  data-owner="name-controller" type="text" name="name" id="nameSign" placeholder="Name">
+
+
+                        <label for="email">Email</label>
+                        <input onclick="manageLeftBAr(this.name)" type="email" name="email" id="emailSign" placeholder="example@gmail.com">
+
+
+                        <label for="password">Password</label>
+                        <input onclick="manageLeftBAr(this.name)" type="password" name="password" id="passwordSign" placeholder="Enter your password">
+
+
+                        <label for="password">Repeat-Password</label>
+                        <input type="password" name="password" id="password" placeholder="Repeat password">
+
+
+                        <input class="checkbox" type="checkbox" name="" id="">
+                        <label class="label-checkbox" for="remmind-me">Remmind me</label>
+                        
+                        <p class="direct-log">if you have account / <a onclick="log();" id="logbtn">log in</a></p>
+
+                        <button class="sub" type="submit">Sign up</button>
+
+
+                        <p class="direct-google">
+
+                            <a href="" target="_blank">
+                                <ion-icon name="logo-codepen"></ion-icon>
+                            </a>
+
+                            <a href="" target="_blank">
+                                <ion-icon name="logo-google"></ion-icon>                        
+                            </a>
+
+                            <a href="" target="_blank">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+
+                        </p>
+
+                    </form>
+                
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+
+
+
+<script src="js.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+
+
+</html>

@@ -1,0 +1,939 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.container > .sign {
+    width: 950px;
+    height: 630px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.container .sign .left {
+    width: 50%;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+
+.container .sign .left .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px 0;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #0050EF;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+
+
+.container .sign .left .login .welcome {
+   color: #B8C144;
+}
+
+
+.container .sign .left .login .circle {
+    height: 370px;
+    width: 370px;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    animation: Rotate 20s linear infinite;
+    -webkit-animation: Rotate 20s linear infinite;
+}
+
+.icon-block {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #60a917;
+    color: #FFF;
+    box-shadow: 0 2px 4px 0 #3e5ada;
+  }
+
+
+  .icon-block ion-icon {
+    margin: 0px auto;
+    width: 86%;
+    font-size: 32px;
+    animation: Rotate-reverse 20s linear infinite;
+    -webkit-animation: Rotate-reverse 20s linear infinite;
+  }
+
+  .icon-block:first-child {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+
+  .icon-block:nth-child(2) {
+    top: 64%;
+    left: 2%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+
+  .icon-block:nth-child(3) {
+    bottom: 15%;
+    right: -13%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+
+  .icon-block:nth-child(4) {
+    bottom: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+
+  /* keyframe animation */
+
+@keyframes Rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes Rotate-reverse {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
+
+
+
+
+
+
+
+.container .sign .left .login .circle .lock-img {
+    border-radius: 10px;
+    position: absolute;
+    animation: Rotate-reverse 20s linear infinite;
+
+}
+
+
+
+.container .sign .left .login .logbtn {
+    width: 50%;
+    height: 40px;
+    background-color: #ffeedd;
+    border-radius: 10px;
+    border: 0;
+    font-size: 18px;
+}
+
+
+.container .sign .left .login .logbtn:hover {
+    background-color: #B8C144;
+    color: #fff;
+
+}
+
+
+
+
+
+
+
+.container .sign .left .form {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px 0;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.container .sign .left .form .box-info .logo {
+    margin: auto;
+    padding-top: 30px;
+    display: block;
+}
+
+.container .sign .left .form .box-info {
+    width: 100%;
+    height: 140px;
+}
+
+.container .sign .left .form .box-info .title {
+    margin: 5px auto 0;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+}
+
+.container .sign .left .form .box-info .content {
+    text-align: center;
+    margin: 5px auto;
+    font-size: 18px;
+}
+
+.container .sign .left .form input {
+    display: block;
+    margin: auto;
+    padding-left: 10px;
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+    background-color: #efefef;
+}
+
+
+.container .sign .left .form #passwordSign {
+    position: relative;
+}
+
+.container .sign-in .form #eye {
+    position: absolute;
+    z-index: 10;
+}
+
+
+.container .sign .left .form input:hover {
+    border: 1px solid #cdcdcd
+}
+
+.container .sign .left .form input:focus, .container .sign-in .form input:active {
+   border: 2px solid rgb(152, 152, 152) !important;
+   outline: none;
+}
+
+.container .sign .left .form label {
+    display: block;
+    margin-left: 10%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.container .sign .left .form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-left: 10%;
+    display: block;
+}
+
+
+
+.container .sign .left .form .sub {
+    width: 50%;
+    height: 40px;
+    background-color: #ffeedd;
+    border-radius: 10px;
+    border-width: 0;
+    margin: 30px auto 10px;
+    display: block;
+    font-size: 18px;
+}
+
+.container .sign .left .form .sub:hover {
+    background-color: #B8C144;
+    color: #fff;
+}
+
+
+.container .sign .left .form .checkbox {
+    display: inline !important;
+    margin-top: 20px;
+}
+.container .sign .left .form .label-checkbox {
+    display: inline;
+    margin-left: 5px;
+}
+
+.container .sign .left .form .direct-google {
+    text-align: center;
+}
+
+.container .sign .left .form .direct-google a {
+    border: 1px solid #008ecf;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    transition: 333ms;
+}
+
+.container .sign .left .form .direct-google a ion-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.container .sign .left .form .direct-google a:hover {
+    color: #fff;
+    background-color: #B8C144;
+}
+
+.container .sign .left .form .direct-log {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+.container .sign .left .info {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #0050EF;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.active {
+    background-color: #1619e2;
+}
+
+.container .sign .left .info .welcome {
+    color: #B8C144;
+}
+
+
+.container .sign .left .info .lock-img {
+    border-radius: 10px;
+}
+
+.container .sign .left .info .text-info {
+    text-align: center;
+    width: 50%;
+    height: 40px;
+    background-color: #ffeedd;
+    border-radius: 10px;
+    border: 0;
+    font-size: 18px;
+}
+
+
+.container .sign .left .info div input[type=checkbox] {
+      position: relative;
+      border: 2px solid #666;
+      border-radius: 10px;
+      background-color: #FFF;
+      cursor: pointer;
+      line-height: 0;
+      margin: 0 .6em 0 0;
+      outline: 0;
+      padding: 0 !important;
+      vertical-align: text-top;
+      height: 30px;
+      width: 60px;
+
+  }
+  
+  .container .sign .left .info div input[type=checkbox]:hover {
+    opacity: 1;
+  }
+  
+  .container .sign .left .info div input[type=checkbox]:checked {
+    background-color: #B8C144;
+    opacity: 1;
+  }
+  
+  .container .sign .left .info div input[type=checkbox]:before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 4px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    margin: -1px -1px 0 -1px;
+    transform: rotate(45deg) translate(-50%, -50%);
+    z-index: 2;
+  }
+
+
+
+
+
+
+.container .sign .left .info div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+
+
+
+.container .sign .left .info div input {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+
+.container .sign .left .info div img {
+    width: 80px;
+    height: 80px;
+}
+
+.container .sign .left .info .text-info:hover {
+    background-color: #B8C144;
+    color: #fff;
+}
+
+.container .sign .left .info .text-info:focus {
+    outline: 0;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Email  */
+
+.container .sign .left .email {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #0050EF;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.container .sign .left .email .welcome {
+    text-align: center;
+    color: #B8C144;
+}
+
+.container .sign .left .email .lock-img {
+    animation-name: movement;
+    animation-duration: 4s;
+}
+
+
+.container .sign .left .email .text-info {
+    width: 50%;
+    height: 40px;
+    background-color: #ffeedd;
+    border-radius: 10px;
+    border: 0;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.container .sign .left .email .text-info:hover {
+    background-color: #B8C144;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/* password  */
+
+.container .sign .left .password {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #0050EF;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.container .sign .left .password .welcome {
+    text-align: center;
+    color: #B8C144;
+}
+
+
+
+.container .sign .left .password .lock-img {
+    animation-name: movement;
+    animation-duration: 4s;
+}
+
+
+.container .sign .left .password .text-info {
+    text-align: center;
+    margin: 40px auto 40px;
+    margin: 50px 40px;
+}
+
+
+
+
+.container .sign .left .password .checkScurityPassword {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0 15px;
+    width: 80%;
+}
+
+.container .sign .left .password .checkScurityPassword .bigChar,
+.container .sign .left .password .checkScurityPassword .smallChar,
+.container .sign .left .password .checkScurityPassword .number,
+.container .sign .left .password .checkScurityPassword .sambol,
+.container .sign .left .password .checkScurityPassword .eightChar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 130px;
+
+}
+
+.container .sign .left .password .checkScurityPassword label {
+    font-size: 18px;
+    color: #ffeedd;
+    margin: 5px 0;
+}
+
+.container .sign .left .password .checkScurityPassword input {
+    width: 25px;
+    height: 25px;
+    background-color: #ffeedd;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+
+.container .sign .left .password .checkScurityPassword input[type=checkbox] {
+      position: relative;
+      border: 2px solid #666;
+      border-radius: 10px;
+      background-color: #FFF;
+      cursor: pointer;
+      line-height: 0;
+      margin: 0 .6em 0 0;
+      outline: 0;
+      padding: 0 !important;
+      vertical-align: text-top;
+      height: 30px;
+      width: 30px;
+  }
+  
+  .container .sign .left .password .checkScurityPassword input[type=checkbox]:hover {
+    opacity: 1;
+  }
+  
+  .container .sign .left .password .checkScurityPassword input[type=checkbox]:checked {
+    background-color: #B8C144;
+    opacity: 1;
+    border: 0;
+  }
+  
+  .container .sign .left .password .checkScurityPassword input[type=checkbox]:before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 4px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    margin: -1px -1px 0 -1px;
+    transform: rotate(45deg) translate(-50%, -50%);
+    z-index: 2;
+  }
+
+
+
+  .container .sign .left .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 0;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: transform 80ms ease-in;  
+    animation-name: login;
+    animation-duration: 4s;
+    z-index: 10;
+  }
+
+
+.container .sign .left .form form {
+    width: 80%;
+}
+
+.container .sign .left .form input {
+    display: block;
+    margin: auto;
+    padding-left: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+    background-color: #efefef;
+}
+
+
+
+.container .sign .left .form input:hover {
+    border: 1px solid #cdcdcd
+}
+
+.container .sign .left .form input:focus, .container .sign-in .form input:active {
+   border: 2px solid rgb(152, 152, 152) !important;
+   outline: none;
+}
+
+.container .sign .left .form label {
+    display: block;
+    margin-left: 1%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.container .sign .left .form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-left: 10%;
+    display: block;
+}
+
+
+
+.container .sign .left .form .sub {
+    width: 70%;
+    height: 40px;
+    background-color: #ffeedd;
+    border-radius: 10px;
+    border-width: 0;
+    margin: 30px auto 30px;
+    display: block;
+    font-size: 18px;
+}
+
+.container .sign .left .form .sub:hover {
+    background-color: #B8C144;
+    color: #fff;
+}
+
+
+.container .sign .left .form .checkbox {
+    display: inline !important;
+    margin-top: 20px;
+}
+
+.container .sign .left .form .label-checkbox {
+    display: inline;
+    margin-left: 5px;
+}
+
+
+.container .sign .left .form label {
+    display: block;
+    margin-left: 1%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.container .sign .left .form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-left: 2%;
+    display: block;
+}
+
+
+/* ---------------------------  right side bar  ---------------------- */
+
+.container .sign .right {
+  width: 50%;
+}
+
+.container .sign .right .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 0;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.container .sign .right .form .box-info .logo {
+    margin: auto;
+    display: block;
+}
+
+.container .sign .right .form .box-info {
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.container .sign .right .form .box-info .title {
+    margin: 5px auto 0;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+}
+
+.container .sign .right .form .box-info .content {
+    text-align: center;
+    margin: 5px auto;
+    font-size: 18px;
+}
+
+
+.container .sign .right .form form{
+    width: 80%;
+}
+
+.container .sign .right .form input {
+    display: block;
+    margin: auto;
+    padding-left: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+    background-color: #efefef;
+}
+
+
+.container .sign .right .form #passwordSign {
+    position: relative;
+}
+
+.container .sign .right .form #eye {
+    position: absolute;
+    z-index: 10;
+}
+
+
+.container .sign .right .form input:hover {
+    border: 1px solid #cdcdcd
+}
+
+.container .sign .right .form input:focus, .container .sign-in .form input:active {
+   border: 2px solid rgb(152, 152, 152) !important;
+   outline: none;
+}
+
+.container .sign .right .form label {
+    display: block;
+    margin-left: 1%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.container .sign .right .form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-left: 10%;
+    display: block;
+}
+
+
+
+.container .sign .right .form .sub {
+    width: 70%;
+    height: 40px;
+    background-color: #ffeedd;
+    border-radius: 10px;
+    border-width: 0;
+    margin: 30px auto 10px;
+    display: block;
+    font-size: 18px;
+}
+
+.container .sign .right .form .sub:hover {
+    background-color: #B8C144;
+    color: #fff;
+}
+
+
+.container .sign .right .form .checkbox {
+    display: inline !important;
+    margin-top: 20px;
+}
+.container .sign .right .form .label-checkbox {
+    display: inline;
+    margin-left: 5px;
+}
+
+.container .sign .right .form .direct-google {
+    text-align: center;
+}
+
+.container .sign .right .form .direct-google a {
+    border: 1px solid #008ecf;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    transition: 333ms;
+}
+
+.container .sign .right .direct-google a ion-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.container .sign .right .form .direct-google a:hover {
+    color: #fff;
+    background-color: #B8C144;
+}
+
+.container .sign .right .form .direct-log {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+.container .sign .right .form .direct-log a:hover{
+    color: #B8C144;
+}
+
+
+
+
+
+
+.container .sign .right .directToSignUp {
+    background-color: #0050EF;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px 0;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.container .sign .right .directToSignUp .logbtn {
+    width: 55%;
+    height: 40px;
+    background-color: #B8C144;
+    color: #FFF;
+    border-radius: 10px;
+    border-width: 0;
+    margin: 30px auto 10px;
+    display: block;
+    font-size: 18px;
+}
+
+.container .sign .right .directToSignUp .logbtn:hover {
+    background-color: #ffeedd;
+    color: #333;
+}
